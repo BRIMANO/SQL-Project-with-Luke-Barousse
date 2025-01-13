@@ -3,7 +3,6 @@
 
 SELECT
     job_schedule_type AS schedule,
-    job_posted_date AS date_day,
     ROUND(AVG(salary_year_avg), 2) AS mean_year_salary,
     ROUND(AVG(salary_hour_avg), 2) AS mean_hour_salary
 FROM
@@ -11,13 +10,9 @@ FROM
 WHERE
     job_posted_date > '2023-06-01'
 GROUP BY
-    schedule,
-    date_day,
-    salary_year_avg,
-    salary_hour_avg
+    schedule
 ORDER BY
-    salary_year_avg,
-    salary_hour_avg
+    schedule;
 
 
 
