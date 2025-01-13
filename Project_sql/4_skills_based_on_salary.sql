@@ -13,7 +13,7 @@ GROUP BY
     skills
 ORDER BY
     mean_salary DESC
-LIMIT 40;
+LIMIT 10;
 
 
 

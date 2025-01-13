@@ -72,4 +72,4 @@ HAVING
 ORDER BY    
     mean_salary DESC,
     demand_count DESC
-LIMIT 30;
+LIMIT 10;
